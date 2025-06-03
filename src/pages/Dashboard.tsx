@@ -311,7 +311,7 @@ export default function Dashboard() {
                         label={deal.status}
                         sx={{
                           bgcolor: DEAL_STATUS_COLORS[deal.status as keyof typeof DEAL_STATUS_COLORS],
-                          color: 'white',
+                          color: 'red',
                         }}
                       />
                     </TableCell>
