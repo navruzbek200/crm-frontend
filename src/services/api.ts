@@ -2,7 +2,7 @@ import axios from 'axios';
 import type { AuthResponse, Customer, Deal, Interaction, LoginCredentials, User, PaginatedResponse } from '../types';
 
 const api = axios.create({
-  baseURL: 'http://13.60.16.62:3001/api',
+  baseURL: 'http://localhost:3000/api',
   withCredentials: true, // Important for session cookies
 });
 

@@ -82,7 +82,7 @@ export default function Customers() {
   const customers = customersData?.data || [];
   const totalPages = customersData?.meta?.totalPages || 1;
 
-  console.log(customersData);
+
 
   const createMutation = useMutation({
     mutationFn: async (data: Partial<Customer>) => {
@@ -219,7 +219,7 @@ export default function Customers() {
                     <IconButton
                       color="error"
                       onClick={() => deleteMutation.mutate(customer.id)}
-                      size="small"
+                      size="medium"
                     >
                       <DeleteIcon />
                     </IconButton>
